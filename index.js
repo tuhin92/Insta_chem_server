@@ -9,6 +9,10 @@ const port = 5000; // you can choose any port
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Chemical Prediction API!');
+});
+
 // Multer setup for file uploads
 const upload = multer({ dest: 'uploads/' });
 
