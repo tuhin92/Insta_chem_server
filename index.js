@@ -12,6 +12,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Welcome to the Chemical Prediction API!');
 });
+// app.get('/health', (req, res) => {})
 
 // Multer setup for file uploads
 const upload = multer({ dest: 'uploads/' });
